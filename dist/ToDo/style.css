@@ -1,0 +1,249 @@
+*{
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	top: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgba(0,0,0,0.04);
+}
+
+.top-0{
+	top : 0;
+}
+
+.Header{
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+	padding: 5px;
+  	width: 100%;
+  	font-size: 100px;
+  	font-weight: 100;
+  	text-align: center;
+  	color: rgba(175,47,47,0.15);
+  	line-height: 1.4em;
+  	transform: scale(1,1);
+}
+
+.Initial_Container{
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+	height: 60px;
+	display: flex;
+	border: 1px solid #ededed;
+}
+
+.All_Selector_Container{
+	flex-basis: 10%;
+	background-color: white;
+
+}
+
+.Input_Todo_Container{
+	flex-basis: 90%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+}
+
+.All_Selector{
+	transform: rotate(90deg);
+    margin : 0;
+	width: 100%;
+	height: 100%;
+	font-size: 21px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 59.8px;
+}
+
+.All_Selector:hover {
+	cursor: default;
+}
+
+.Input_Todo{
+	height: 100%;
+	width: 100%;
+	border-style: none;
+	font-size: 24px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	outline: none;
+	font-weight: 100;
+}
+
+::placeholder{
+	font-style: italic;
+	color: (0,0,0,0.15);
+	opacity: 0.2;
+}
+
+.List_Todo{
+	top: 0;
+}
+
+.All{
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+	width: 600px;
+	background-color: white;
+	display: flex;
+	border: 1px solid #ededed;
+	border-top: none;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.All:hover > .Close_Container{
+	visibility: visible;
+	cursor: pointer;
+}
+
+.CheckBox_Container{
+	flex: 0 0 10%;
+	display: flex;
+	align-items: center;
+}
+
+.CheckBox{
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.Completed .Tickmark{
+	height: 20px;
+	width: 8px;
+	border: solid green;
+	border-width: 0 1px 1px 0;
+	display: inline-block;
+	padding: 0px;
+	transform: rotate(40deg);
+	margin: 3px;
+}
+
+.CheckBox:hover{
+	cursor: default;
+}
+
+.Content_Container{
+	flex: 0 0 82%; 
+	font-size: 24px;
+	word-break: break-word;
+	font-weight: 100;
+	padding: 15px;
+}
+
+.Content_Container:hover{
+	cursor: default;
+}
+
+.Content_Changer{
+	flex: 0 0 82%; 
+	font-size: 24px;
+	padding: 10px;
+	outline: none;
+	border: 1px solid black;
+}
+
+.Close_Container{
+	flex: 0 0 8%;
+	font-size: 20px;
+	font-weight: 200;
+	visibility: hidden;
+	text-align: center;
+	text-decoration-line: none;
+	color: #cc9a9a;
+	padding: 10px;
+	transform: scale(1.2,0.9);
+	display: flex;
+	align-items: center;
+}
+
+
+
+.Completed .CheckBox{
+	font-size: 27px;
+	color: rgba(0,125,0,0.6);
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.Information_Displayer{
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+  	width: 600px;
+  	background-color: white;
+  	height: 60px;
+  	display: none;
+	border: 1px solid #ededed;
+	box-shadow: 0px 10px 0px -5px rgba(255,255,255,0.9), 0px 11px 1px -5px rgba(20,20,20,0.1),0px 21px 0px -10px white,0px 22px 1px -10px rgba(20,20,20,0.1);
+	border-top: none;
+}
+
+.Number_Of_Items{
+	flex: 0 0 20%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60px;
+	color: rgba(0,0,0,0.5)
+}
+
+.Display_Handler{
+	flex: 0 0 55%;
+	box-sizing: border-box;
+	padding: 10px 20px;
+}
+
+.Clear_Completed{
+	flex: 0 0 25%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60px;
+	display: none;
+	color: rgba(0,0,0,0.5)
+}
+ul{
+	text-align: center;
+	top: 0;
+	list-style-type: none;
+	padding: 3px;
+	margin: 0;
+}
+
+li{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+	color: rgba(0,0,0,0.5);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 3px;
+}
+
+li:hover{
+	border-color: rgba(0,0,0,0.1);
+	cursor: pointer;
+}
+
+.isclick{
+	border-color: rgba(0,0,0,0.1);
+}
+
+.Clear_Completed:hover{
+	text-decoration-line: underline;
+	cursor: pointer;
+}

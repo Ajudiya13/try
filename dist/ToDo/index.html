@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Todo</title>
+	<link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<div class="Header">todos</div>
+
+<div class="Initial_Container">
+	<div class="All_Selector_Container" onclick="select_All()">
+		<h1 class="All_Selector">&#10095;</h1>
+	</div>
+	<div class="Input_Todo_Container">
+		<input type="text" placeholder="What needs to be done?" class="Input_Todo">
+	</div>
+	
+</div>
+
+<div class="List_Todo"></div>
+
+<div class="Information_Displayer">
+	<div class="Number_Of_Items"></div>
+	<div class="Display_Handler">
+		<ul>
+			<li class="All_Displayer isclick" onclick="change_view(this)">All</li>
+			<li class="Active_Displayer" onclick="change_view(this)">Active</li>
+			<li class="Completed_Displayer" onclick="change_view(this)">Completed</li>
+		</ul>
+	</div>
+	<div class="Clear_Completed" onclick="clear_completed()">Clear Completed</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

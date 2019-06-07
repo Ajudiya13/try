@@ -1,0 +1,9 @@
+review changes
+1. capitals in the class names ( no needed, read BEM )
+2. move on click or any event handlers to js
+3. change px to rem & find out the difference between px, rem & em
+4. use short hand notation in css
+5. keep in mind of how css can impact the multiple use of same element.. always make a decision considering there might be multiple copies
+6. read DRY and follow it religiously
+7. separate the single js file into multiple files which consist of modular architecture
+8.  
