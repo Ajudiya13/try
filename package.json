@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@build-tracker/cli": "^1.0.0-alpha.1",
+    "@build-tracker/formatting": "^1.0.0-alpha.1",
+    "@build-tracker/plugin-with-postgres": "^1.0.0-alpha.1",
+    "@build-tracker/server": "^1.0.0-alpha.1",
+    "@build-tracker/types": "^1.0.0-alpha.1",
+    "glob": "^7.1.4"
+  },
+  "scripts" : {
+  "bt-cli": "node node_modules/@build-tracker/cli/dist/bin.js"
+  }
+}
