@@ -1,6 +1,6 @@
 const withPostgres = require('@build-tracker/plugin-with-postgres').default;
 module.exports = withPostgres({
-  url: 'https://your-build-tracker-app',
+  url: 'https://space-qa4.sprinklr.com',
   pg: {
     user: 'myuser',
     password: 'mypassword',
